@@ -4,12 +4,12 @@ phases:
     commands:
       - sudo apt-get update 
       - sudo apt-get -y install git 
-      - sudo mkdir geostore
+   
       - cd /geostore
       - git init 
       - git clone 
       - cd /src
-      - sudo apt-get install maven
+      - sudo apt-get-y install maven
       - maven clean install
       - cd /web/app
       - mvn jetty:run
