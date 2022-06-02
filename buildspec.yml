@@ -15,7 +15,6 @@ phases:
       - echo 'prebuild stage'
   build:
     commands:
-      - curl localhost:8181
     finally:
       - echo 'runs despite the state'
 
