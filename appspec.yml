@@ -1,0 +1,13 @@
+version: 0.0
+os: linux 
+files: 
+ - source: 
+   destination: 
+hooks:
+  BeforeInstall:
+   - location: scripts/deps
+     timeout: 300
+     runas: root
+   - location: scripts/dep
+     timeout: 300
+     runas: root 

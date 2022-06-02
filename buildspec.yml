@@ -1,0 +1,32 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - sudo apt-get update 
+      - sudo apt-get install git 
+      - sudo mkdir geostore
+      - cd /geostore
+      - git init 
+      - git clone 
+      - cd /src
+      - sudo apt-get install maven
+      - maven clean install
+      - cd /web/app
+      - mvn jetty:run
+    finally:
+      - echo 'Executing....'
+  pre_build:
+    commands:
+      - echo 'prebuild stage'
+  build:
+    commands:
+      - curl localhost:8181/geostore/rest
+    finally:
+      - echo 'runs despite the state'
+
+
+  post_build:
+    commands:
+      - echo 'done'
+    finally:
+      - echo "done"
