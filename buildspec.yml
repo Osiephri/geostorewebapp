@@ -6,10 +6,7 @@ phases:
       - sudo apt-get -y install git
       - git init 
       - git clone https://github.com/geosolutions-it/geostore.git
-      - cd /src
       - sudo apt-get-y install maven
-      - maven clean install
-      - cd /web/app
       - mvn jetty:run
     finally:
       - echo 'Executing....'
