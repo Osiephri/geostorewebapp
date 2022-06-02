@@ -7,7 +7,8 @@ phases:
       - git init 
       - git clone https://github.com/geosolutions-it/geostore.git
       - sudo apt-get -y install maven
-      - mvn jetty:run
+      - sudo cd /src/web/app
+      - sudo mvn jetty:run
     finally:
       - echo 'Executing....'
   pre_build:
