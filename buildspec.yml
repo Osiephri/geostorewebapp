@@ -27,8 +27,8 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: s3://codepipeline-us-east-1-473423601664/val/
-  name: enable
+  base-directory: https://codepipeline-us-east-1-473423601664.s3.amazonaws.com/
+  name: val
   discard-paths: no
   
  
