@@ -27,7 +27,6 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: val
   name: val
   discard-paths: no
 
