@@ -27,7 +27,7 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: base_dir
+  base-directory: https://us-east-1.console.aws.amazon.com/s3/buckets/codepipeline-us-east-1-473423601664/?region=us-east-1
   name: val/BuildArtif/yySuFJV
   discard-paths: no
   
