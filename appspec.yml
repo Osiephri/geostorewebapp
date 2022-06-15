@@ -5,9 +5,9 @@ files:
    destination: /var/www/html
 hooks:
   BeforeInstall:
-   - location: scripts/deps
+   - location: scripts/deps.txt
      timeout: 300
      runas: root
-   - location: scripts/dep
+   - location: scripts/dep.txt
      timeout: 300
      runas: root 
