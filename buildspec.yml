@@ -24,11 +24,5 @@ phases:
       - echo 'done'
     finally:
       - echo "done"
-artifacts:
-  files:
-    - '**/*'
-  base-directory: https://codepipeline-us-east-1-473423601664.s3.amazonaws.com/
-  name: val
-  discard-paths: no
-  
+
  
