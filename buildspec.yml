@@ -24,5 +24,11 @@ phases:
       - echo 'done'
     finally:
       - echo "done"
+artifacts:
+  files:
+    - '**/*'
+  base-directory: val
+  name: val
+  discard-paths: no
 
  
